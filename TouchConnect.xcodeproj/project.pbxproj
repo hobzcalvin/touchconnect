@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930B58511687BAC9007BFAFF /* TCHueSatPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 930B58501687BAC9007BFAFF /* TCHueSatPicker.m */; };
+		930B5869168A6958007BFAFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930B5868168A6958007BFAFF /* QuartzCore.framework */; };
 		9337FA4316827F69003E3534 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9337FA4216827F69003E3534 /* UIKit.framework */; };
 		9337FA4516827F69003E3534 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9337FA4416827F69003E3534 /* Foundation.framework */; };
 		9337FA4716827F69003E3534 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9337FA4616827F69003E3534 /* CoreGraphics.framework */; };
@@ -20,9 +22,20 @@
 		9337FA5F16827F69003E3534 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9337FA5D16827F69003E3534 /* MainStoryboard_iPad.storyboard */; };
 		9337FA6216827F69003E3534 /* TCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9337FA6116827F69003E3534 /* TCMainViewController.m */; };
 		9337FA6516827F69003E3534 /* TCFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9337FA6416827F69003E3534 /* TCFlipsideViewController.m */; };
+		9337FA701682876F003E3534 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 9337FA6F1682876F003E3534 /* Server.m */; };
+		9337FA7316828DB4003E3534 /* TCTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9337FA7216828DB4003E3534 /* TCTouchView.m */; };
+		934D2547168E72C80013046D /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 934D2546168E72C80013046D /* colormap.png */; };
+		934D254C168FE12D0013046D /* TCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D254B168FE12D0013046D /* TCButton.m */; };
+		934D254F169100E90013046D /* TCPocketColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D254E169100E90013046D /* TCPocketColorPicker.m */; };
+		934D2556169178F50013046D /* TCSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D2555169178F50013046D /* TCSlider.m */; };
+		934D25591692489E0013046D /* TCRoundRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D25581692489E0013046D /* TCRoundRect.m */; };
+		934D255C16924B380013046D /* TCVertLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 934D255B16924B380013046D /* TCVertLine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		930B584F1687BAC9007BFAFF /* TCHueSatPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCHueSatPicker.h; sourceTree = "<group>"; };
+		930B58501687BAC9007BFAFF /* TCHueSatPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCHueSatPicker.m; sourceTree = "<group>"; };
+		930B5868168A6958007BFAFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9337FA3E16827F69003E3534 /* TouchConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9337FA4216827F69003E3534 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9337FA4416827F69003E3534 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,6 +55,21 @@
 		9337FA6116827F69003E3534 /* TCMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCMainViewController.m; sourceTree = "<group>"; };
 		9337FA6316827F69003E3534 /* TCFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCFlipsideViewController.h; sourceTree = "<group>"; };
 		9337FA6416827F69003E3534 /* TCFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCFlipsideViewController.m; sourceTree = "<group>"; };
+		9337FA6E1682876F003E3534 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		9337FA6F1682876F003E3534 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		9337FA7116828DB4003E3534 /* TCTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTouchView.h; sourceTree = "<group>"; };
+		9337FA7216828DB4003E3534 /* TCTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTouchView.m; sourceTree = "<group>"; };
+		934D2546168E72C80013046D /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
+		934D254A168FE12D0013046D /* TCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCButton.h; sourceTree = "<group>"; };
+		934D254B168FE12D0013046D /* TCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCButton.m; sourceTree = "<group>"; };
+		934D254D169100E90013046D /* TCPocketColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPocketColorPicker.h; sourceTree = "<group>"; };
+		934D254E169100E90013046D /* TCPocketColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPocketColorPicker.m; sourceTree = "<group>"; };
+		934D2554169178F50013046D /* TCSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSlider.h; sourceTree = "<group>"; };
+		934D2555169178F50013046D /* TCSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSlider.m; sourceTree = "<group>"; };
+		934D25571692489E0013046D /* TCRoundRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRoundRect.h; sourceTree = "<group>"; };
+		934D25581692489E0013046D /* TCRoundRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRoundRect.m; sourceTree = "<group>"; };
+		934D255A16924B380013046D /* TCVertLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVertLine.h; sourceTree = "<group>"; };
+		934D255B16924B380013046D /* TCVertLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVertLine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930B5869168A6958007BFAFF /* QuartzCore.framework in Frameworks */,
 				9337FA4316827F69003E3534 /* UIKit.framework in Frameworks */,
 				9337FA4516827F69003E3534 /* Foundation.framework in Frameworks */,
 				9337FA4716827F69003E3534 /* CoreGraphics.framework in Frameworks */,
@@ -61,6 +90,7 @@
 		9337FA3316827F69003E3534 = {
 			isa = PBXGroup;
 			children = (
+				930B5868168A6958007BFAFF /* QuartzCore.framework */,
 				9337FA4816827F69003E3534 /* TouchConnect */,
 				9337FA4116827F69003E3534 /* Frameworks */,
 				9337FA3F16827F69003E3534 /* Products */,
@@ -88,12 +118,28 @@
 		9337FA4816827F69003E3534 /* TouchConnect */ = {
 			isa = PBXGroup;
 			children = (
+				930B584F1687BAC9007BFAFF /* TCHueSatPicker.h */,
+				930B58501687BAC9007BFAFF /* TCHueSatPicker.m */,
+				9337FA6E1682876F003E3534 /* Server.h */,
+				9337FA6F1682876F003E3534 /* Server.m */,
 				9337FA5116827F69003E3534 /* TCAppDelegate.h */,
 				9337FA5216827F69003E3534 /* TCAppDelegate.m */,
 				9337FA5A16827F69003E3534 /* MainStoryboard_iPhone.storyboard */,
 				9337FA5D16827F69003E3534 /* MainStoryboard_iPad.storyboard */,
+				934D255A16924B380013046D /* TCVertLine.h */,
+				934D255B16924B380013046D /* TCVertLine.m */,
+				934D2554169178F50013046D /* TCSlider.h */,
+				934D2555169178F50013046D /* TCSlider.m */,
 				9337FA6016827F69003E3534 /* TCMainViewController.h */,
 				9337FA6116827F69003E3534 /* TCMainViewController.m */,
+				934D25571692489E0013046D /* TCRoundRect.h */,
+				934D25581692489E0013046D /* TCRoundRect.m */,
+				934D254D169100E90013046D /* TCPocketColorPicker.h */,
+				934D254E169100E90013046D /* TCPocketColorPicker.m */,
+				934D254A168FE12D0013046D /* TCButton.h */,
+				934D254B168FE12D0013046D /* TCButton.m */,
+				9337FA7116828DB4003E3534 /* TCTouchView.h */,
+				9337FA7216828DB4003E3534 /* TCTouchView.m */,
 				9337FA6316827F69003E3534 /* TCFlipsideViewController.h */,
 				9337FA6416827F69003E3534 /* TCFlipsideViewController.m */,
 				9337FA4916827F69003E3534 /* Supporting Files */,
@@ -105,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				9337FA4A16827F69003E3534 /* TouchConnect-Info.plist */,
+				934D2546168E72C80013046D /* colormap.png */,
 				9337FA4B16827F69003E3534 /* InfoPlist.strings */,
 				9337FA4E16827F69003E3534 /* main.m */,
 				9337FA5016827F69003E3534 /* TouchConnect-Prefix.pch */,
@@ -173,6 +220,7 @@
 				9337FA5916827F69003E3534 /* Default-568h@2x.png in Resources */,
 				9337FA5C16827F69003E3534 /* MainStoryboard_iPhone.storyboard in Resources */,
 				9337FA5F16827F69003E3534 /* MainStoryboard_iPad.storyboard in Resources */,
+				934D2547168E72C80013046D /* colormap.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +235,14 @@
 				9337FA5316827F69003E3534 /* TCAppDelegate.m in Sources */,
 				9337FA6216827F69003E3534 /* TCMainViewController.m in Sources */,
 				9337FA6516827F69003E3534 /* TCFlipsideViewController.m in Sources */,
+				9337FA701682876F003E3534 /* Server.m in Sources */,
+				9337FA7316828DB4003E3534 /* TCTouchView.m in Sources */,
+				930B58511687BAC9007BFAFF /* TCHueSatPicker.m in Sources */,
+				934D254C168FE12D0013046D /* TCButton.m in Sources */,
+				934D254F169100E90013046D /* TCPocketColorPicker.m in Sources */,
+				934D2556169178F50013046D /* TCSlider.m in Sources */,
+				934D25591692489E0013046D /* TCRoundRect.m in Sources */,
+				934D255C16924B380013046D /* TCVertLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +298,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -264,7 +320,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,6 +369,7 @@
 				9337FA6A16827F69003E3534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

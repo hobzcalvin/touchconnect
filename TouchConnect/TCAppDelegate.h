@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Server.h"
 
-@interface TCAppDelegate : UIResponder <UIApplicationDelegate>
+@interface TCAppDelegate : UIResponder <UIApplicationDelegate, ServerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

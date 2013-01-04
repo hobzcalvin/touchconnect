@@ -7,14 +7,79 @@
 //
 
 #import "TCAppDelegate.h"
+#import "TCMainViewController.h"
 
-@implementation TCAppDelegate
+@implementation TCAppDelegate {
+    Server* server;
+    TCMainViewController* mainVC;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    server = [[Server alloc] initWithProtocol:@"TouchConnect"];
+    server.payloadSize = 1024;//START HERE: Does this give us enough to send all the touches like we'd want?
+    // WELL, it doesn't. because also, it seems to combine several sends into one packet on the other side: 374, 224 here becomes 598.
+    // HOWEVER, I can't repro in an ad-hoc network. For now, just always use that?! ick.
+    server.delegate = self;
+    NSError *error = nil;
+    if(![server start:&error]) {
+        NSLog(@"error = %@", error);
+    }
+    
+    mainVC = (TCMainViewController*)self.window.rootViewController;
+    //mainVC.server = server;
+    
     return YES;
 }
+
+#pragma mark Server Delegate Methods
+
+- (void)serverRemoteConnectionComplete:(Server *)theServer {
+    NSLog(@"Server Started");
+    
+    [mainVC connectionComplete:theServer];
+    // XXX: The outputstream isn't ready to go at this point, which is dumb.
+    //[NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(reportSize) userInfo:nil repeats:NO];
+}
+- (void)reportSize {
+    // this is called when the remote side finishes joining with the socket as
+    // notification that the other side has made its connection with this side
+    NSError* err;
+    [server sendData:[NSKeyedArchiver archivedDataWithRootObject:@{@"viewSize" : [NSValue valueWithCGSize:mainVC.mainView.bounds.size]}] error:&err];
+    if (err) {
+        NSLog(@"error reporting size: %@", err);
+    }
+}
+
+- (void)serverStopped:(Server *)server {
+    NSLog(@"Server stopped");
+    [mainVC connectionLost];
+}
+
+- (void)server:(Server *)server didNotStart:(NSDictionary *)errorDict {
+    NSLog(@"Server did not start %@", errorDict);
+}
+
+- (void)server:(Server *)server didAcceptData:(NSData *)data {
+    NSLog(@"Server did accept data %@", data);
+}
+
+- (void)server:(Server *)server lostConnection:(NSDictionary *)errorDict {
+    NSLog(@"Server lost connection %@", errorDict);
+    [mainVC connectionLost];
+}
+
+- (void)serviceAdded:(NSNetService *)service moreComing:(BOOL)more {
+    [server connectToRemoteService:service];
+}
+
+- (void)serviceRemoved:(NSNetService *)service moreComing:(BOOL)more {
+}
+
+#pragma mark -
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {

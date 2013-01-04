@@ -11,12 +11,13 @@
 @class TCFlipsideViewController;
 
 @protocol TCFlipsideViewControllerDelegate
-- (void)flipsideViewControllerDidFinish:(TCFlipsideViewController *)controller;
+- (void)flipsideViewControllerDidFinish:(TCFlipsideViewController *)controller withResult:(id)result;
 @end
 
-@interface TCFlipsideViewController : UIViewController
+@interface TCFlipsideViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) id <TCFlipsideViewControllerDelegate> delegate;
+@property (nonatomic) boolean_t forScan;
 
 - (IBAction)done:(id)sender;
 
